@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #C1B55E;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.edgebutton {
+  border-radius: 100% !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: black !important;
+  padding: 5px !important;
+  /* line-height: 6px !important; */
+  font-size: 12px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.elementWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  width: 250px !important;
+  color: #2d373e !important;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #2d373e;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  width: 250px !important;
+  color: #2d373e !important;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #2d373e;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333 !important;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+
+.saveButton {
+  width: max-content;
+  min-width: 100px;
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #C1B55E;
+}
+
+.saveButtonPopUp {
+  width: max-content !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #C1B55E;
+}
+
+.twoWayButton {
+  width: max-content !important;
+  min-width: 80px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #fff;
+  border: solid 1px #C1B55E;
+  color: #C1B55E;
+}
+
+.toolbarButton {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333 !important;
+}
+
+.nodeCloseButton {
+  background-color: transparent !important;
+  color: #000 !important;
+  font-size: 18px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  outline: none !important;
+  border: none !important;
+  /* position: absolute;
+  top: -20px;
+  right: -20px; */
+}
+
+.popup {
+  width: 280px;
+  background-color: #dfdfdf;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  border-radius: 10px;
+  box-shadow: 0 0 2em #c2c2c2;
+  color: #333
+}
+
+p {
+  color: #383D44 !important;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.groupColor {
+  background-color: #f8f8f83d !important;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.saveIntentButton {
+  width: 100% !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0px 10px !important;
+  height: 30px !important;
+}
+
+.primaryButton {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #C1B55E;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 100px;
+  margin: 0px 10px;
+  border: solid 1px #C1B55E;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
+.primaryButton:hover {
+  font-size: 12pxpx;
+  color: #C1B55E;
+  background-color: #fff;
+}
+
+
+
+.OptionButton {
+  color: #383D44;
+  background-color: #ffffff;
+  border: solid 1px #D9D9D9;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.OptionButton:hover {
+  /* border-color: #C1B55E; */
+  border-color: #D9D9D9;
+}
+
+.OptionButton:focus {
+  /* border-color: #C1B55E; */
+  border-color: #D9D9D9;
+  outline: none !important;
+}
+
+.flowHandleCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #FBFBFB;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.103) !important;
+}
+
+.controlWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.cardInput,
+textarea {
+  background-color: #ffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cardInput::placeholder {
+  color: #AAB6C1 !important;
+}
+
+
+/* Firefox */
+.cardInput::-moz-placeholder {
+  color: #AAB6C1 !important;
+}
+
+/* Internet Explorer 10-11 */
+.cardInput:-ms-input-placeholder {
+  color: #AAB6C1 !important;
+}
+
+/* Microsoft Edge */
+.cardInput::-ms-input-placeholder {
+  color: #AAB6C1 !important;
+}
+
+
+label {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ImageUploadWrapper p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #132A00;
+  margin-bottom: 4px;
+}
+
+.ImageUploadWrapper p span {
+  color: #1F4690;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.ImageUploadWrapper span {
+  color: #969DB2;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.intent_input {
+  width: 150px !important;
+}
+
+/* react-flow__node react-flow__node-buttonGroup nopan selected selectable parent */
+
+.react-flow__node-buttonGroup {
+  background-color: #f8f8f83d !important;
+  z-index: 0;
+  pointer-events: all;
+  visibility: visible;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+.topBarGroup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 10px;
+}
+.select-checkbox{
+  width: max-content !important;
+  justify-self: start;
+  margin: 0px;
+}
+
+
+.addButton {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #C1B55E;
+  background-color: #fff;
+  padding: 5px;
+  font-weight: 300;
+  border-radius: 8px;
+  min-width: 80px;
+  margin: 0px 10px;
+  border: solid 1px #C1B55E;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
+.addButton:hover {
+  color: #fff;
+  background-color: #C1B55E;
+}

@@ -1,0 +1,314 @@
+.overview * {
+  box-sizing: border-box;
+}
+
+.overview .react-flow__controls button {
+  box-sizing: content-box;
+}
+
+.overview .react-flow__node {
+  font-size: 12px;
+}
+
+.edgebutton {
+  width: 20px;
+  height: 20px;
+  background: #eee;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.edgebutton:hover {
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.08);
+}
+
+.react-flow__node-tools {
+  border: 1px solid #333;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.react-flow__node-toolbar {
+  border-radius: 5px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+.react-flow__node-toolbar button {
+  border: 1px solid #eee;
+  background: white;
+  cursor: pointer;
+}
+
+.react-flow__node-toolbar button:hover {
+  background: #f5f5f6;
+}
+
+.react-flow__node-toolbar button:first-child {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.react-flow__node-toolbar button:last-child {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+
+.react-flow__node-resizer {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.react-flow__node-resizer .react-flow__handle,
+.react-flow__node-circle .react-flow__handle,
+.react-flow__node-start .react-flow__handle,
+.react-flow__node-end .react-flow__handle,
+.react-flow__node-textinput .react-flow__handle {
+  background: #868686;
+  border-radius: 0;
+  width: 8px;
+  height: 4px;
+  border: none;
+  min-width: 2px;
+  min-height: 2px;
+}
+
+.react-flow__node-resizer .react-flow__handle-bottom,
+.react-flow__node-circle .react-flow__handle-bottom,
+.react-flow__node-start .react-flow__handle-bottom,
+.react-flow__node-end .react-flow__handle-bottom,
+.react-flow__node-textinput .react-flow__handle-bottom {
+  bottom: -5px;
+  transform: none;
+  border-radius: 0 0 2px 2px;
+}
+
+.react-flow__node-resizer .react-flow__handle-top,
+.react-flow__node-circle .react-flow__handle-top,
+.react-flow__node-start .react-flow__handle-top,
+.react-flow__node-end .react-flow__handle-top,
+.react-flow__node-textinput .react-flow__handle-top {
+  top: -5px;
+  transform: none;
+  border-radius: 2px 2px 0 0;
+}
+
+.react-flow__node-resizer .react-flow__handle-left,
+.react-flow__node-circle .react-flow__handle-left,
+.react-flow__node-start .react-flow__handle-left,
+.react-flow__node-end .react-flow__handle-left,
+.react-flow__node-textinput .react-flow__handle-left {
+  height: 8px;
+  width: 4px;
+  left: -5px;
+  border-radius: 2px 0 0 2px;
+}
+
+.react-flow__node-annotation {
+  font-size: 16px;
+  width: 200px;
+  color: rgb(158, 118, 255);
+  font-family: monospace;
+  position: absolute;
+}
+
+.react-flow__node-annotation .arrow {
+  position: absolute;
+  font-size: 24px;
+}
+
+.react-flow__node-circle,
+.react-flow__node-start,
+.react-flow__node-end,
+.react-flow__node-textinput {
+  color: #fff;
+  background-color: #dfdfdf;
+  border-radius: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  /* box-shadow:
+      6px 2px 15px rgba(42, 138, 246, 0.3),
+      -6px 2px 15px rgba(233, 42, 103, 0.3); */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.103) !important;
+}
+
+.react-flow__node-circle .wrapper,
+.react-flow__node-start .wrapper,
+.react-flow__node-end .wrapper,
+.react-flow__node-textinput .wrapper {
+  overflow: hidden;
+  display: flex;
+  padding: 2px;
+  position: relative;
+  border-radius: 100%;
+  flex-grow: 1;
+}
+
+.react-flow__node-circle .inner,
+.react-flow__node-start .inner,
+.react-flow__node-end .inner {
+  background: transparent;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.react-flow__node-textinput {
+  border-radius: 5px;
+  width: 150px;
+  text-align: left;
+  height: auto;
+}
+
+.react-flow__node-textinput .wrapper {
+  border-radius: 5px;
+  height: 100%;
+}
+
+.react-flow__node-textinput .inner {
+  background: rgba(255, 255, 255, 0.5);
+  flex-grow: 1;
+  position: relative;
+  padding: 10px;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.react-flow__node-textinput input {
+  width: 100%;
+  font-size: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  padding: 6px 10px;
+  color: #555;
+}
+
+.react-flow__node-textinput input::placeholder {
+  color: #AAB6C1 !important;
+}
+
+.gradient:before {
+  content: '';
+  position: absolute;
+  padding-bottom: calc(100% * 1.41421356237);
+  width: calc(100% * 1.41421356237);
+  background: conic-gradient(from -160deg at 50% 50%,
+      #2acce9bb 0deg,
+      #536ebabe 120deg,
+      #2a89f6b2 240deg,
+      #832ae9c2 360deg);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+.react-flow__minimap .group {
+  fill-opacity: 0.4;
+}
+
+.react-flow__minimap .resizer,
+.react-flow__minimap .tools,
+.react-flow__minimap .circle,
+.react-flow__minimap .start,
+.react-flow__minimap .end,
+.react-flow__minimap .textinput {
+  fill: rgb(208, 192, 247);
+}
+
+.react-flow__minimap .resizer {
+  fill: rgb(208, 192, 247);
+}
+
+.react-flow__minimap .circle,
+.react-flow__minimap .start,
+.react-flow__minimap .end {
+  rx: 100%;
+  ry: 100%;
+}
+
+.react-flow__minimap .annotation {
+  display: none;
+}
+
+
+.plainColor {
+  /* background-color: #85032c; */
+  /* background: conic-gradient(
+    from -160deg at 50% 50%,
+    #e92a67 0deg,
+    #a853ba 120deg,
+    #2a8af6 240deg,
+    #e92a67 360deg
+  ); */
+  /* background: conic-gradient(from -160deg at 50% 50%,
+      #2acce9bb 0deg,
+      #2a89f6b2 120deg,
+      #2a89f6b2 240deg,
+      #2aa3e9bb 360deg); */
+  /* background-color: #E9F1FF; */
+  background-color: #dfdfdf;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.178) !important;
+}
+
+
+.react-flow__node {
+  position: absolute !important;
+}
+
+.react-flow__node-cardHeader {
+  position: absolute !important;
+}
+
+.react-flow__node-button {
+  position: absolute !important;
+}
+
+.intent_input {
+  width: 180px !important;
+}
+
+
+.react-flow__node-default {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.react-flow__node-cardGroup {
+  z-index: '999 !important';
+  pointer-events: "all";
+  visibility: "visible",
+}
+
+.imageCard {
+  z-index: '999 !important';
+  pointer-events: "all";
+  visibility: "visible",
+}
+
+.react-flow__node-buttonGroup{
+  background-color: #f8f8f83d !important;
+}
