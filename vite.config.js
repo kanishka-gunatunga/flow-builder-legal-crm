@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   proxy: {
     '/api': {
-      target: 'https://dfcc.vercel.app', // your API endpoint
+      target: 'https://legal-crm.vercel.app', // your API endpoint
       changeOrigin: true,
       rewrite: (path) => path.replace(/^\/api/, ''),
     },

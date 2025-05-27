@@ -1,4 +1,4 @@
-const apiUrl = 'https://dfcc.vercel.app';
+const apiUrl = 'https://legal-crm.vercel.app';
 
 
 export const onConnectEdge = async (params: any): Promise<void> => {
